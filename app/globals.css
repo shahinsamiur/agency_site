@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #151515;
+  --secondary: #c70e1a;
+  --text-color: #ffffff;
+  --font-sans: var(--font-space);
+  --font-mono: var(--font-atkinson);
 }
 
 @theme inline {
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-secondary: var(--secondary);
+  --color-text: #ffffff;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #151515;
+    --secondary: #c70e1a;
+    --text-color: #ffffff;
+    --font-sans: var(--font-space);
+    --font-mono: var(--font-atkinson);
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+section {
+  @apply container mx-auto py-4 px-6 w-full relative;
+}
+@utility bg-radial {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+@utility from-secondary-40 {
+  --tw-gradient-from: rgb(199 14 26 / 0.4);
+  --tw-gradient-stops: var(--tw-gradient-from),
+    var(--tw-gradient-to, rgb(199 14 26 / 0));
+}
+
+@utility via-secondary-10 {
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(199 14 26 / 0.1),
+    var(--tw-gradient-to, rgb(199 14 26 / 0));
+}
+
+@utility to-transparent {
+  --tw-gradient-to: transparent;
+}
+.text-stroke {
+  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.5);
+  color: transparent;
+}
+* {
+  box-sizing: border-box;
 }
