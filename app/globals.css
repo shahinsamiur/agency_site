@@ -33,8 +33,17 @@ body {
 }
 
 section {
-  @apply container mx-auto py-4 px-6 w-full relative;
+  @apply container mx-auto py-4 px-6 w-full relative text-text;
 }
+
+h1 {
+  @apply text-text/90 text-4xl lg:text-5xl xl:text-6xl w-full font-semibold lg:leading-20 xl:leading-14;
+}
+
+p {
+  @apply text-white/90 text-sm lg:text-xl;
+}
+
 @utility bg-radial {
   background-image: radial-gradient(var(--tw-gradient-stops));
 }
