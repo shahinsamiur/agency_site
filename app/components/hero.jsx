@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <div className="absolute bg-linear-to-t from-background to-transparent w-full bottom-0 left-0 h-20"></div>
+      {/* <div className="absolute bg-linear-to-t from-background to-transparent w-full bottom-0 left-0 h-20"></div> */}
     </div>
   );
 }
