@@ -28,7 +28,9 @@
     --font-mono: var(--font-atkinson);
   }
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   background: var(--background);
   font-family: var(--font-sans);

@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={``}>
+      <body className={`w-screen  overflow-x-hidden!`}>
         <Nav />
         {children}
         <Footer />
