@@ -10,8 +10,8 @@ export default function Service() {
             Creative Design Solution
           </h1>
           <p className="text-sm sm:text-base text-text/80">
-            Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan
-            ricotta garlic dolor sauce marinara Chicago marinara.
+            We offer end-to-end digital services to help your brand stand out
+            and grow online.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function Service() {
         <div
           className="grid gap-6
                      grid-cols-1
-                     sm:grid-cols-2
+                     sm:grid-cols-1
                      lg:grid-cols-3
                      xl:grid-cols-5"
         >

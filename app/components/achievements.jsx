@@ -5,7 +5,7 @@ import { achivements } from "../_mock/achivement";
 export default function Achievements() {
   return (
     <div className=" relative bg-linear-to-l from-secondary/10   to-background text-text pb-10 pt-20">
-      <section className="space-y-20">
+      <section className="space-y-20 h-auto!">
         <div className="flex flex-col gap-5 lg:flex-row">
           <h1 className="flex gap-5 max-md:text-3xl!">
             Our Achievements
@@ -18,8 +18,8 @@ export default function Achievements() {
             />
           </h1>
           <p className="">
-            Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan
-            ricotta garlic dolor sauce marinara Chicago marinara.
+            We’re proud of the results we’ve delivered and the long-term
+            relationships we’ve built with our clients.
           </p>
         </div>
 

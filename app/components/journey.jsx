@@ -17,9 +17,9 @@ export default function Journey() {
             />
           </h1>
           <p>
-            Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan
-            ricotta garlic dolor sauce marinara Chicago marinara. Tomato dolor
-            pesto pesto Bianca pesto roll onions.
+            We believe great digital products start with clear thinking and end
+            with meaningful results. Our process is simple, transparent, and
+            focused on your success.
           </p>
         </div>
         <div className="flex flex-col gap-10 lg:gap-20">

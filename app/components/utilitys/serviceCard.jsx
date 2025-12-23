@@ -4,11 +4,10 @@ import { FaCode } from "react-icons/fa";
 export default function ServiceCard() {
   return (
     <div
-      className="group bg-[#2c2323] w-full min-h-[380px] sm:min-h-[420px]
+      className="group bg-[#2c2323] w-full lg:min-h-[380px] sm:min-h-[420px]
                  border border-text p-5 flex flex-col rounded-3xl
                  relative overflow-hidden transition-all duration-300 ease-out"
     >
-      {/* Background Circle */}
       <div
         className="bg-secondary absolute bottom-[-60px] right-[-60px] size-200
                    rounded-full opacity-0 scale-75
@@ -16,9 +15,7 @@ export default function ServiceCard() {
                    transition-all duration-700 ease-out"
       />
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col gap-4 h-full">
-        {/* Icon */}
         <div
           className="p-4 sm:p-5 bg-secondary group-hover:bg-[#2c2323]
                      w-fit rounded-2xl transition-all duration-700 ease-out"
@@ -26,12 +23,9 @@ export default function ServiceCard() {
           <FaCode className="text-xl sm:text-2xl" />
         </div>
 
-        {/* Title */}
         <h2 className="text-xl sm:text-2xl">Web Development</h2>
 
-        {/* Text Wrapper */}
         <div className="relative flex-1">
-          {/* Default Text */}
           <p
             className="absolute inset-0 text-sm sm:text-base
                        opacity-100 translate-y-0
@@ -41,8 +35,6 @@ export default function ServiceCard() {
             Lorem ipsum dolor sit amet consectetur. Venenatis lectus mollis
             placerat id. Egestas turpis mattis adipiscing ut.
           </p>
-
-          {/* Hover Text */}
           <p
             className="absolute inset-0 text-sm sm:text-base
                        opacity-0 translate-y-2

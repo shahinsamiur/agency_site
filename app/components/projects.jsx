@@ -20,9 +20,8 @@ export default function Projects() {
             </h1>
 
             <p className="text-sm sm:text-base text-white/70 leading-relaxed max-w-xl">
-              Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan
-              ricotta garlic dolor sauce marinara Chicago marinara. Tomato dolor
-              pesto pesto Bianca pesto roll onions.
+              Take a look at some of our recent work. Each project is carefully
+              crafted to meet real business goals and deliver real results.
             </p>
           </div>
 

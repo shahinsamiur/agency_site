@@ -12,19 +12,18 @@ export default function Footer() {
         <div className="flex justify-between items-start gap-10 flex-col lg:flex-row">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="text-secondary text-3xl font-bold">⬛</div>
+              <div className="text-secondary text-3xl font-bold"></div>
               <h2 className="text-2xl font-semibold text-secondary">Stygar</h2>
             </div>
 
             <p className="text-sm leading-relaxed text-gray-400 max-w-md">
-              Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan
-              ricotta garlic dolor sauce marinara Chicago marinara. Tomato dolor
-              pesto bianco pesto red onions.
+              We design and develop digital experiences that help businesses
+              grow.
             </p>
 
             <div className="mt-5 space-y-2 text-sm">
-              <p> stygar@help.com</p>
-              <p> +1 (555) 123-4567</p>
+              <p>shahinsamiur@gmail.com</p>
+              <p>+8801997063720</p>
               <p> 5987 Mid Rivers Mall Dr., St. Charles</p>
             </div>
 

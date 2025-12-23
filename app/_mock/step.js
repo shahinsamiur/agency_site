@@ -3,28 +3,24 @@ export const steps = [
     {
       index: 1,
       title: "Discover",
-      content:
-        "Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan.",
+      content: "We understand your business, goals, and audience.",
     },
     {
       index: 2,
-      title: "Discover",
-      content:
-        "Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan.",
+      title: "Plan",
+      content: "We design a clear strategy and structure for your project.",
     },
   ],
   [
     {
       index: 3,
-      title: "Discover",
-      content:
-        "Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan.",
+      title: "Build",
+      content: "We develop clean, fast, and scalable digital solutions.",
     },
     {
       index: 4,
-      title: "Discover",
-      content:
-        "Pizza ipsum dolor meat lovers buffalo. Extra broccoli parmesan.",
+      title: "Launch & Grow",
+      content: "We test, launch, and support your growth long-term.",
     },
   ],
 ];
