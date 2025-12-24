@@ -5,14 +5,44 @@ import Button from "./utilitys/buttons";
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
-
+import useMobile from "../hooks/useMediaQuery";
 export default function Hero() {
   const { scrollY } = useScroll();
-
+  const isMobile = useMobile();
   // Parallax values
-  const textY = useTransform(scrollY, [0, 500], [0, 220]);
+  const textY = useTransform(scrollY, [0, 500], [0, 180]);
   const imageY = useTransform(scrollY, [0, 500], [0, 80]);
   const contentY = useTransform(scrollY, [0, 500], [0, -40]);
+  // common scroll range
+  const range = isMobile ? 250 : 400;
+
+  // DESKTOP SCALE
+  const headingScale = useTransform(
+    scrollY,
+    [0, range],
+    [1, isMobile ? 1 : 0.55]
+  );
+
+  const textScale = useTransform(scrollY, [0, range], [1, isMobile ? 1 : 0.9]);
+
+  // MOBILE SLIDE LEFT
+  const mobileXHeading = useTransform(
+    scrollY,
+    [0, range],
+    [0, isMobile ? -120 : 0]
+  );
+  const mobileXParagraph = useTransform(
+    scrollY,
+    [0, range],
+    [0, isMobile ? 120 : 0]
+  );
+
+  // MOBILE FADE
+  const mobileOpacity = useTransform(
+    scrollY,
+    [0, range],
+    [1, isMobile ? 0 : 1]
+  );
 
   return (
     <div className="relative bg-linear-to-l from-secondary/10 to-background text-text pb-10 pt-20 overflow-hidden">
@@ -23,15 +53,28 @@ export default function Hero() {
             style={{ y: contentY }}
             className="w-full lg:w-1/2 flex flex-col justify-start items-center gap-10"
           >
-            <h1>
+            <motion.h1
+              style={{
+                scale: headingScale,
+                x: mobileXHeading,
+                opacity: mobileOpacity,
+              }}
+            >
               Turning <span className="text-secondary">Ideas</span> Into <br />
               Digital Reality
-            </h1>
+            </motion.h1>
 
-            <p className="w-[95%]">
+            <motion.p
+              className="w-[95%]"
+              style={{
+                scale: textScale,
+                x: mobileXParagraph,
+                opacity: mobileOpacity,
+              }}
+            >
               We help businesses grow with modern websites, smart design, and
               powerful digital solutions.
-            </p>
+            </motion.p>
 
             <div className="w-full flex justify-start gap-5">
               <Button href="/contact">Start a Project</Button>
@@ -51,7 +94,7 @@ export default function Hero() {
               style={{ y: textY }}
               className="
                 text-stroke uppercase absolute -z-10
-                text-[5rem] md:text-[6rem] lg:text-[8rem] xl:text-[15rem]!
+                text-[5rem]! md:text-[6rem] lg:text-[8rem] xl:text-[15rem]!
               "
             >
               samiur
