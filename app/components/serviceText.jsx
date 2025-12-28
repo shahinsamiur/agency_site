@@ -18,9 +18,9 @@ export default function Service() {
           >
             <h1
               className="
-                sticky top-1/2 -translate-y-1/2
+                sticky top-1/2 -translate-y-1/2 
                 text-center uppercase text-stroke
-                text-[2rem] md:text-[6rem] lg:text-[8rem] xl:text-[12rem]!
+                text-[3rem]! md:text-[6rem] lg:text-[8rem] xl:text-[12rem]!
               "
             >
               {service}

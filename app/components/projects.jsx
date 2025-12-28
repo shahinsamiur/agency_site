@@ -49,9 +49,9 @@ export default function Projects() {
                 className="w-full h-72 sm:h-80 object-cover transform transition-transform duration-700 ease-out group-hover:scale-110"
               />
 
-              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" /> */}
 
-              <div className="absolute bottom-0 w-full px-6 py-5 translate-y-6 group-hover:translate-y-0 transition-all duration-500">
+              <div className="absolute bottom-0 max-sm:pb-10 lg:bottom-5 w-full px-6 py-5 translate-y-6  transition-all duration-500 bg-linear-to-t from-black/60 via-black/20 to-transparent opacity-100">
                 <h2 className="text-lg font-semibold text-white">
                   Project Title
                 </h2>

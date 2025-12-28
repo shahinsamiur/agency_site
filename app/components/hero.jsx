@@ -9,23 +9,16 @@ import useMobile from "../hooks/useMediaQuery";
 export default function Hero() {
   const { scrollY } = useScroll();
   const isMobile = useMobile();
-  // Parallax values
   const textY = useTransform(scrollY, [0, 500], [0, 180]);
   const imageY = useTransform(scrollY, [0, 500], [0, 80]);
   const contentY = useTransform(scrollY, [0, 500], [0, -40]);
-  // common scroll range
   const range = isMobile ? 250 : 400;
-
-  // DESKTOP SCALE
   const headingScale = useTransform(
     scrollY,
     [0, range],
     [1, isMobile ? 1 : 0.55]
   );
-
   const textScale = useTransform(scrollY, [0, range], [1, isMobile ? 1 : 0.9]);
-
-  // MOBILE SLIDE LEFT
   const mobileXHeading = useTransform(
     scrollY,
     [0, range],
@@ -36,8 +29,6 @@ export default function Hero() {
     [0, range],
     [0, isMobile ? 120 : 0]
   );
-
-  // MOBILE FADE
   const mobileOpacity = useTransform(
     scrollY,
     [0, range],
@@ -48,7 +39,6 @@ export default function Hero() {
     <div className="relative bg-linear-to-l from-secondary/10 to-background text-text pb-10 pt-20 overflow-hidden">
       <section>
         <div className="flex justify-center items-center flex-col-reverse md:flex-row p-2">
-          {/* LEFT CONTENT */}
           <motion.div
             style={{ y: contentY }}
             className="w-full lg:w-1/2 flex flex-col justify-start items-center gap-10"
@@ -83,13 +73,10 @@ export default function Hero() {
               </Button>
             </div>
           </motion.div>
-
-          {/* RIGHT IMAGE */}
           <motion.div
             style={{ y: imageY }}
             className="w-full lg:w-1/2 flex justify-center items-center relative"
           >
-            {/* Background Stroke Text */}
             <motion.h1
               style={{ y: textY }}
               className="
